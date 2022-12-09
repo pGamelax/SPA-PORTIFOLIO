@@ -10,8 +10,9 @@ function Contador(){
     }
     return (
         <div>  
+            <img src="https://avatars.githubusercontent.com/u/61333827?v=4"/>
             <div>{contador}</div>
-            <button onClick={adicionarContador}>Clique em mim</button>
+            <button onClick={adicionarContador}>Clique oi em mim</button>
         </div>
     )
 }
