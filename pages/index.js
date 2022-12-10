@@ -1,18 +1,22 @@
 import { useState } from "react"
+const axios = require("axios")
+
+
 
 
 
 
 function Contador(){
-    const [contador, setContador] = useState(1)
-    function adicionarContador(){
-        setContador(contador+1)
-    }
+    const [name, setName] = useState("")
+    axios.get("https://api.github.com/users/pgamelax").then((resp)=>{
+        setName(resp.data.name)
+    
+    })
+
     return (
         <div>  
             <img src="https://avatars.githubusercontent.com/u/61333827?v=4"/>
-            <div>{contador}</div>
-            <button onClick={adicionarContador}>Clique oi em mim</button>
+            <div>{name}</div>
         </div>
     )
 }
