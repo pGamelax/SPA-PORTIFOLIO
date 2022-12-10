@@ -15,6 +15,7 @@ function Contador(){
 
     return (
         <div>  
+            <title>Pedro Gamela</title>
             <img src="https://avatars.githubusercontent.com/u/61333827?v=4"/>
             <div>{name}</div>
         </div>
